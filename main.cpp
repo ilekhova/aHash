@@ -19,11 +19,11 @@ int main(int argc, char* argv[])
    std::vector<std::string> v; //Вектор строк
    std::string S;  //Считываемое слово из файла
 
-   while(getline(file, S))  v.push_back(S);  //Считывание в вектор названий из файла
+   while(getline(file, S))  v.push_back("images/"+S);  //Считывание в вектор названий из файла
 
    for (unsigned int i=0;i<v.size();i++) std::cout<<v.at(i)<<"\n"; //Вывод вектора на экран
 
-        char obj_name[] = "object.jpg";
+        char obj_name[] = "images/object.jpg";
 
 
         // имя объекта задаётся первым параметром
